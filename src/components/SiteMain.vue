@@ -29,7 +29,7 @@ export default {
             <!-- /select form -->
             <div class="small_container container py-5">
                 <div class="founded_cards">
-                    <p class="mb-0 p-3">Found tot cards</p>
+                    <p class="mb-0 p-3">Found {{ store.cards.length }} cards</p>
                 </div>
                 <CardsList></CardsList>
             </div>

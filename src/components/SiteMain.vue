@@ -1,11 +1,13 @@
 <script>
-import { store } from '../store.js'
+import CardsList from './CardsList.vue';
+
 export default {
-    name: 'SiteMain',
+    name: "SiteMain",
     data() {
-        return {
-            store,
-        }
+        return {};
+    },
+    components: {
+        CardsList
     }
 }
 </script>
@@ -26,20 +28,7 @@ export default {
                 <div class="founded_cards">
                     <p class="mb-0 p-3">Found tot cards</p>
                 </div>
-                <div class="row row-cols-5">
-                    <div class="col">
-                        <div class="card rounded-0">
-                            <!-- <img src="" class="card-img-top" alt="..."> -->
-                            <div class="card-body">
-                                <h5 class="card-title">Cavaliere</h5>
-                                <p class="card-text">Some</p>
-                            </div>
-                        </div>
-                        <!-- / card -->
-                    </div>
-                    <!-- /col -->
-                </div>
-                <!-- /cardsList -->
+                <CardsList></CardsList>
             </div>
             <!-- /small_container -->
         </div>

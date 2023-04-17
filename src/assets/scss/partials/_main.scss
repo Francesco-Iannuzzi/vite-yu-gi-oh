@@ -2,7 +2,6 @@
 
 main {
     background-color: $primary;
-    height: 100rem;
 
     .big_container {
         .form-select {
@@ -11,7 +10,6 @@ main {
 
         .small_container {
             background-color: $light;
-            height: 90rem;
 
             .founded_cards {
                 background-color: $dark;

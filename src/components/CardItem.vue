@@ -14,7 +14,7 @@ export default {
 
 <template>
     <div class="col">
-        <div class="card rounded-0">
+        <div class="card rounded-0 my-2">
             <img src="" class="card-img-top" :alt="card.name">
             <div class="card-body">
                 <h5 class="card-title">{{ card.name }}</h5>

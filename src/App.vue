@@ -6,7 +6,7 @@ import SiteMain from './components/SiteMain.vue';
 export default {
   data() {
     return {
-      API_URL: 'https://db.ygoprodeck.com/api/v7/cardinfo.php',
+      API_URL: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=5&offset=5',
       cards: null,
       info: null,
 
@@ -42,6 +42,5 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use './assets/scss/partials/variables' as *;
 @use '/node_modules/bootstrap/scss/bootstrap.scss';
 </style>

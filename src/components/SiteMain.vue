@@ -21,9 +21,9 @@ export default {
             <div class="py-4">
                 <select class="form-select" v-model="store.type">
                     <option selected>Select Type</option>
-                    <option value="1">Alien</option>
-                    <option value="2">Noble Knight</option>
-                    <option value="3">Magician</option>
+                    <option value="Alien">Alien</option>
+                    <option value="Noble Knight">Noble Knight</option>
+                    <option value="Magician">Magician</option>
                 </select>
             </div>
             <!-- /select form -->

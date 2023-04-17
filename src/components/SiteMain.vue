@@ -1,10 +1,13 @@
 <script>
+import { store } from '../store.js'
 import CardsList from './CardsList.vue';
 
 export default {
     name: "SiteMain",
     data() {
-        return {};
+        return {
+            store
+        };
     },
     components: {
         CardsList
@@ -16,8 +19,8 @@ export default {
     <main>
         <div class="big_container container">
             <div class="py-4">
-                <select class="form-select">
-                    <option selected>Select Race</option>
+                <select class="form-select" v-model="store.type">
+                    <option selected>Select Type</option>
                     <option value="1">Alien</option>
                     <option value="2">Noble Knight</option>
                     <option value="3">Magician</option>

@@ -1,6 +1,4 @@
 @use './partials/variables' as *;
-@use 'node_modules/bootstrap/scss/bootstrap.scss';
-
-body {
-    background-color: $primary;
-}
+@use './partials/common';
+@use './partials/header';
+@use './partials/main';

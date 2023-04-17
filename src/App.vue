@@ -41,4 +41,7 @@ export default {
   <SiteMain></SiteMain>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use './assets/scss/partials/variables' as *;
+@use '/node_modules/bootstrap/scss/bootstrap.scss';
+</style>

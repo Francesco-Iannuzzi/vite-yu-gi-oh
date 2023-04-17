@@ -1,0 +1,9 @@
+@use './variables' as *;
+
+header {
+    background-color: $light;
+
+    h1 {
+        padding: 1rem;
+    }
+}

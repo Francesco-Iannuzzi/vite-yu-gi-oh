@@ -11,7 +11,15 @@ export default {
 </script>
 
 <template>
-    <h1>{{ store.searchText }}</h1>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                </div>
+            </div>
+        </div>
+    </main>
 </template>
 
 

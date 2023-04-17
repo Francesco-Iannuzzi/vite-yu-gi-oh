@@ -2,4 +2,35 @@
 
 main {
     background-color: $primary;
+    height: 100rem;
+
+    .big_container {
+        .form-select {
+            width: 20%;
+        }
+
+        .small_container {
+            background-color: $light;
+            height: 90rem;
+
+            .founded_cards {
+                background-color: $dark;
+                color: $light;
+            }
+
+            .card {
+                background-color: $primary;
+
+                .card-body {
+                    h5 {
+                        color: $light;
+                    }
+
+                    p {
+                        color: $dark;
+                    }
+                }
+            }
+        }
+    }
 }

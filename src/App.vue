@@ -6,7 +6,7 @@ import SiteMain from './components/SiteMain.vue';
 export default {
   data() {
     return {
-      API_URL: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=5&offset=5',
+      API_URL: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=10&offset=0',
       cards: null,
       info: null,
 
@@ -22,7 +22,8 @@ export default {
         .get(url)
         .then(response => {
           console.log(response.data);
-
+          this.cards = response.data
+          console.log(this.cards);
         })
         .catch(err => {
           console.log(err);
@@ -41,6 +42,4 @@ export default {
   <SiteMain></SiteMain>
 </template>
 
-<style lang="scss" scoped>
-@use '/node_modules/bootstrap/scss/bootstrap.scss';
-</style>
+<style lang="scss" scoped></style>

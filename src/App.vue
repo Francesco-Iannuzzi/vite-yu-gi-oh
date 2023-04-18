@@ -18,6 +18,7 @@ export default {
   },
   mounted() {
     store.generateYugiCards(store.API_URL)
+    store.generateYugiArchetype(store.API_URL_archetype)
   }
 }
 </script>

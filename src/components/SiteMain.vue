@@ -31,9 +31,8 @@ export default {
             <div class="py-4">
                 <select class="form-select" @change="store.generateYugiCards(store.API_URL)" v-model="store.archetype">
                     <option value=''>Select Archetype</option>
-                    <option value="Alien">Alien</option>
-                    <option value="Noble Knight">Noble Knight</option>
-                    <option value="Melodious">Melodious</option>
+                    <option v-for="archetype in store.archetypeList" :value="archetype.archetype_name">{{
+                        archetype.archetype_name }}</option>
                 </select>
             </div>
             <!-- /select form -->

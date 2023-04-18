@@ -19,7 +19,7 @@ export default {
             <img :src="card.card_images[0].image_url" class="card-img-top" :alt="card.name">
             <div class="card-body">
                 <h5 class="card-title">{{ card.name }}</h5>
-                <p class="card-text">{{ card.type }}</p>
+                <p class="card-text">{{ card.archetype }}</p>
             </div>
         </div>
         <!-- / card -->

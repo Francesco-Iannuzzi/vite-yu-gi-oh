@@ -17,6 +17,8 @@ export default {
         searchArchetype() {
             // ?archetype=${archetype}
             console.log('search Archetype', store.archetype);
+            // const url = store.API_URL + `?archetype=${store.archetype}`
+            // store.generateYugiCards(url)
 
         }
     }
@@ -27,8 +29,8 @@ export default {
     <main>
         <div class="big_container container pb-5">
             <div class="py-4">
-                <select class="form-select" @change="$emit('searchArchetype')" v-model="store.archetype">
-                    <option selected>{{ store.archetype }}</option>
+                <select class="form-select" @change="store.generateYugiCards(store.API_URL)" v-model="store.archetype">
+                    <option value=''>Select Archetype</option>
                     <option value="Alien">Alien</option>
                     <option value="Noble Knight">Noble Knight</option>
                     <option value="Melodious">Melodious</option>

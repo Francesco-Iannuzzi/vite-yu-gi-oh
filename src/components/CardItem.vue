@@ -1,5 +1,4 @@
 <script>
-import { store } from '../store.js'
 export default {
     name: 'CardItem',
     props: {
@@ -7,7 +6,7 @@ export default {
     },
     data() {
         return {
-            store
+
         }
     }
 }

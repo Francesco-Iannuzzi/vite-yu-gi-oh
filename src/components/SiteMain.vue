@@ -4,6 +4,7 @@ import CardsList from './CardsList.vue';
 
 export default {
     name: "SiteMain",
+    emits: ['searchArchetype'],
     data() {
         return {
             store
@@ -11,6 +12,13 @@ export default {
     },
     components: {
         CardsList
+    },
+    methods: {
+        searchArchetype() {
+            // ?archetype=${archetype}
+            console.log('search Archetype', store.archetype);
+
+        }
     }
 }
 </script>
@@ -19,11 +27,11 @@ export default {
     <main>
         <div class="big_container container pb-5">
             <div class="py-4">
-                <select class="form-select" v-model="store.archetype">
+                <select class="form-select" @change="$emit('searchArchetype')" v-model="store.archetype">
                     <option selected>{{ store.archetype }}</option>
                     <option value="Alien">Alien</option>
                     <option value="Noble Knight">Noble Knight</option>
-                    <option value="Magician">Magician</option>
+                    <option value="Melodious">Melodious</option>
                 </select>
             </div>
             <!-- /select form -->

@@ -4,6 +4,8 @@ main {
     background-color: $primary;
 
     .big_container {
+        background-color: $primary;
+
         .form-select {
             width: 20%;
         }
@@ -18,14 +20,18 @@ main {
 
             .card {
                 background-color: $primary;
+                height: 100%;
 
                 .card-body {
+
                     h5 {
                         color: $light;
+                        height: 70%;
                     }
 
                     p {
                         color: $dark;
+                        height: 30%;
                     }
                 }
             }

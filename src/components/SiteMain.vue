@@ -17,17 +17,17 @@ export default {
 
 <template>
     <main>
-        <div class="big_container container">
+        <div class="big_container container pb-5">
             <div class="py-4">
-                <select class="form-select" v-model="store.type">
-                    <option selected>Select Type</option>
+                <select class="form-select" v-model="store.archetype">
+                    <option selected>{{ store.archetype }}</option>
                     <option value="Alien">Alien</option>
                     <option value="Noble Knight">Noble Knight</option>
                     <option value="Magician">Magician</option>
                 </select>
             </div>
             <!-- /select form -->
-            <div class="small_container container py-5">
+            <div class="small_container container py-4">
                 <div class="founded_cards">
                     <p class="mb-0 p-3">Found {{ store.cards.length }} cards</p>
                 </div>
